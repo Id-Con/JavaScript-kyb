@@ -1,3 +1,3 @@
-# JavaScript-김영보
+# JavaScript
 
-김영보님의 자바스크립트를 학습하는 repo입니다.
+자바스크립트를 학습하는 repo입니다.
