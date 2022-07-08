@@ -1,3 +1,5 @@
+`use strict`
+
 let obj = new Map();
 obj.set(1,11);
 obj.set(2,22);

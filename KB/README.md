@@ -4,3 +4,23 @@
 - 참조값 : else... ( ex. obj,arr )
 
 ---
+
+## GIT command
+
+git init
+
+git remote add origin ~~
+
+git pull
+
+git status
+
+git remote -v
+
+git add .
+
+git commit -m "article"
+
+git push origin ~~
+
+---
