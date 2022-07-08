@@ -1,0 +1,88 @@
+/* 네이버 녹색 - #00C73C */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  /* border: 1px solid black; */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 헤더 */
+header {
+  height: 160px;
+  width: 1130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-bottom: lightgray 1px solid; */
+}
+.logo {
+  position: relative;
+  bottom: 9px;
+  width: 222px;
+  height: 52px;
+  padding: 7px;
+  margin: 10px;
+}
+.form-control {
+  /* display: inline-block; */
+  height: 50px;
+  /* width: 500px; */
+  border-color: #00c73c;
+  border-width: 3px;
+}
+#button-addon2 {
+  background-color: #00c73c;
+}
+.bi-search {
+  color: white;
+  width: 22px;
+  height: 22px;
+}
+
+/* 네비게이션바 */
+.nav-wrap {
+  width: 100%;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+nav {
+  position: relative;
+  left: 100px;
+}
+.nav-link {
+  font-size: 14px;
+  font-weight: 900;
+}
+.navbar-light .navbar-nav .green {
+  color: #00c73c;
+}
+.navbar-light .navbar-nav .black {
+  color: black;
+}
+.nav-link.black {
+  color: black;
+}
+
+/* 메인 */
+.main {
+  border: 1px solid black;
+  height: 150vh;
+}
+.card-body.news {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 푸터 */
+.footer {
+  /* border-top: 1px solid black; */
+}
