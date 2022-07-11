@@ -11,36 +11,119 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container">
-        <!-- header -->
-        <div class="row">
-            <div class="col-9"></div>
-            <div class="col">네이버를 시작페이지로</div>
-            <div class="col">쥬니어네이버</div>
-            <div class="col">해피빈</div>
+    <div class="container-sm">
+        <!-- header_top -->
+        <div class="row justify-content-end rootNaver">
+            <div class="col-1"><span style="display: inline-block; position: relative;">네이버를 시작페이지로</span><div class="rootPage"></div></div>
+            <div class="col-1 juniorNaver"></div>
+            <div class="col-1 happyBeen"></div>
         </div>
-        <div class="row">
-            <div class="col-3">로고</div>
-            <div class="col-6">검색창</div>
+        <div class="row header">
+            <div class="col-3 naverLogo"></div>
+            <div class="col-7 searchBar">
+                <form>
+                    <input type="search">
+                    <div>
+                        <input type="button">
+                    </div>
+                </form>  
+            </div>
         </div>
-        <!-- section -->
-        <div class="row section">
-            메일 카페 블로그 ~~
-        </div>
-        <!-- section 9 : 3 -->
-        <div class="row">
-            <!-- section 9  -->
+        <!-- header_bottom -->
+        <div class="row header_2">
             <div class="col-9">
-                <div class="row">
-                    <div class="col">광고 1</div>
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav" href="#">메일</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav" href="#">카페</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav" href="#">블로그</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav" href="#">지식iN</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav" href="#">Pay</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav" href="#">TV</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav blackTab" href="#">사전</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav blackTab" href="#">뉴스</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav blackTab" href="#">증권</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav blackTab" href="#">부동산</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav blackTab" href="#">지도</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav blackTab" href="#">VIBE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav blackTab" href="#">책</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav blackTab" href="#">웹툰</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 wheaderWrap">
+                <!-- js작업 -->
+                <div>네이버 웨더 API</div>
+            </div>
+        </div>
+        <!-- section 8 : 3 -->
+        <div class="row justify-content-between">
+            <!-- section 8  -->
+            <div class="col-8">
+                <div class="row banner_1">
+                    <div class="col-3 banner_1_video"></div>
+                    <div class="col-9 banner_1_image"></div>
                 </div>
-                <div class="row">
-                    <div class="col">연합뉴스</div>
+                <div class="row justify-content-between quickNews">
+                    <div class="col-6 quickNewsHeader">
+                        <div>연합뉴스</div>
+                        <!-- js작업 -->
+                        <div>여기에다가 샘플 데이터를 넣으면 될 것 같습니...</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col"><a href="#">뉴스홈</a><span class="iconify" data-icon="bi:dot"></span></div>
+                            <div class="col">연예</div>
+                            <div class="col">스포츠</div>
+                            <div class="col">경제</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row justify-content-between">
-                    <div class="col-4">뉴스스탠드</div>
+                <div class="row justify-content-between newsStand">
+                    <div class="col-4 newsStand_header"><a>뉴스스탠드</a></div>
                     <div class="col-2">설정 탭</div>
                 </div>
+
+
+                <!-- 설정 탭 버튼에 따라 바뀌는 영역 -->
+                <!-- 버튼 1 -->
+                <!-- <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10"></div>
+                </div> -->
+                <!-- 버튼 2 -->
                 <div class="row">
                     <div class="col">
                         <div class="row">
@@ -71,6 +154,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="row justify-content-between">
                     <div class="col-4">오늘 읽을만한 글</div>
                     <div class="col-2">설정 탭</div>
@@ -97,19 +182,24 @@
                 </div>
             </div>
 
-            <!-- section 3  -->
+            <!-- section 4  -->
             <div class="col-3">
                 <div class="row">
                     <div class="col">
-                        <div class="row">
-                            네이버 로그인
+                        <div class="row naverLogin">
+                            네이버 로그인 API
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="row">
-                            환율
+                        <div class="row luna justify-content-between">
+                            <!-- js작업 -->
+                            <div class="col-9">증시 및 환율</div>
+                            <div class="col-2 lunaBtn">
+                                <button class="prevBtn"></button>
+                                <button class="nextBtn"></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -137,8 +227,8 @@
         
 
 
-
-
+    <!-- 아이콘 -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
