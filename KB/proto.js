@@ -1,4 +1,4 @@
-`use strict`
+'use strict'
 
 let Circle = function(r){ //생성자함수는 파스칼케이스, 생성자함수 안에서는 this쓰면 안됨
     this.r = r; 

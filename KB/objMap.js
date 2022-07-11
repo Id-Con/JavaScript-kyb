@@ -1,4 +1,4 @@
-`use strict`
+'use strict'
 
 let obj = new Map();
 obj.set(1,11);

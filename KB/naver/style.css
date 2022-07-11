@@ -1,0 +1,89 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+.container {
+}
+
+.header {
+    position: relative;
+    border-bottom: 1px solid #e4e8eb;
+}
+.header_1 {
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.rootNaver {
+    display: flex;
+    position: absolute;
+    top: 12px;
+    right: 27px;
+}
+.rootNaver div {
+    margin-right: 5px;
+    font-size: 11px;
+    color: #404040;
+}
+.rootNaver div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.line38 {
+    margin: 0 5px 0 5px;
+    font-size: 11px;
+    color: #404040;
+}
+
+.header_2 {
+    height: 160px;
+}
+.searchBody {
+    
+}
+.naverLogo {
+    width: 23%;
+    height: 60px;
+    background-image: url('./naverLogo.PNG');
+    background-size: cover;
+}
+.searchBar{
+    position: relative;
+    width: 46%;
+    height: 55px;
+    border: 2px solid #19ce60;
+    margin-top: 10px;
+}
+.searchBar > input[type='search']{
+    width: 50%;
+}
+.searchBar > input[type='button']{
+    width: 50%;
+}
+
+.header_3 {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    border-top: 1px solid #e4e8eb;
+}
+.nav {
+    color: #03c75a;
+    font-weight: bolder;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    cursor: pointer;
+}
+.blackTab {
+    color: black;
+}
+
+
+
+.article {
+    height: 2800px;
+}
+.footer {
+    height: 420px; background-color: #bbb;
+}
