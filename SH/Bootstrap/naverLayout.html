@@ -39,8 +39,9 @@
           <a href="#"><h1 id="main-logo"></h1></a>
         </div>
         <div class="col-6">
-          <div class="input-group mb-3">
+          <form action="https://search.naver.com/search.naver" method="GET" class="input-group mb-3">
             <input
+              name="query"
               type="text"
               class="form-control"
               id="header-input"
@@ -61,7 +62,7 @@
                 />
               </svg>
             </button>
-          </div>
+          </fo>
         </div>
         <div class="col-3"></div>
       </div>
@@ -126,7 +127,7 @@
             </div>
           </nav>
         </div>
-        <div class="col-3" id="nav-weather">날씨</div>
+        <div class="col-3" id="nav-weather">미세 <strong class="weather_good">좋음</strong> | 초미세 <strong class="weather_good">좋음</strong> <a href="#">이도이동</a></div>
       </div>
 
       <!-- main -->
@@ -1255,30 +1256,44 @@
             </a>
           </div>
         </div>
-        <div class="col-4">
-          <div>로그인박스</div>
-          <div>증시</div>
-          <div>쇼핑몰 소개</div>
-          <div>쇼핑몰 종류</div>
-          <div class="row">
-            <div style="text-align: right">페이징넘버</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div>페이징넘버</div>
-          </div>
-          <div>쇼핑뉴스</div>
-          <div>광고배너1</div>
-          <div>광고배너2</div>
+        
+          <div class="col-4 right-side">
+            <div class="login-box">
+              <div class="card">
+                  <div class="gray">네이버를 더 안전하고 편리하게 이용하세요</div>
+                  <a href="#" class="btn green">NAVER 로그인</a>
+                  <div class="account">
+                    <div id="forget_account">
+                      <a href="#" id="forget_id">아이디</a>
+                      <a href="#" id="forget_password">비밀번호찾기</a>
+                    </div>
+                    <a href="#" id="join_account">회원가입</a>
+                  </div>
+              </div>
+              </div>
+              <div>증시</div>
+              <div>쇼핑몰 소개</div>
+              <div>쇼핑몰 종류</div>
+              <div class="row">
+                <div style="text-align: right">페이징넘버</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div>페이징넘버</div>
+              </div>
+              <div>쇼핑뉴스</div>
+              <div>광고배너1</div>
+              <div>광고배너2</div>
+            </div>
         </div>
       </div>
 

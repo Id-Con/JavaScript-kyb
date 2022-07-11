@@ -83,6 +83,18 @@ a {
 #nav-weather {
   padding: 15px;
 }
+.weather_good {
+  padding: 0 10px;
+}
+.weather_good::before {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  content: "";
+  background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_4f8ccb.png);
+  background-size: 457px 434px;
+  background-position: -420px -286px;
+}
 .nav-link {
   font-weight: 500;
   color: black;
@@ -329,4 +341,51 @@ a {
 }
 .vibe-nav a + a {
   padding-left: 20px;
+}
+
+.right-side {
+  position: sticky;
+  top: 10px;
+}
+/* login */
+.account {
+  display: flex;
+  justify-content: space-between;
+}
+.login-box .card {
+  padding: 20px;
+}
+.btn.green {
+  color: white;
+  border-radius: 0;
+  padding: 10px;
+  background-color: #00c73c;
+  margin: 15px 0;
+  font-weight: 900;
+}
+.gray {
+  color: rgb(155, 155, 155);
+}
+
+#forget_id::before {
+  background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_4f8ccb.png);
+  background-size: 457px 434px;
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  background-position: -444px -98px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  content: "";
+  margin: -1px 3px 1px;
+}
+#forget_password::before {
+  background-color: #d7dce0;
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  content: "";
+  margin: 0 5px 0 2px;
+  vertical-align: 3px;
 }
