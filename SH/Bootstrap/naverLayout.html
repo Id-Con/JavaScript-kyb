@@ -16,141 +16,1295 @@
   <body>
     <div class="container">
       <!-- header -->
-      <div class="row">
+      <div class="row" id="header-links">
         <div class="col-9"></div>
-        <div class="col-1">네이버를 시작페이지로</div>
-        <div class="col-1">쥬니어네이버</div>
-        <div class="col-1">해피빈</div>
+        <div class="col-1" id="start-naver">
+          <a href="#"
+            >네이버를 시작페이지로<span
+              id="arrow-icon"
+              class="iconify"
+              data-icon="bi:arrow-down-circle"
+              data-rotate="270deg"
+            ></span>
+          </a>
+        </div>
+        <div class="col-1">
+          <a href="" class="header-link-gray">쥬니어네이버</a>
+        </div>
+        <div class="col-1"><a href="" class="header-link-gray">해피빈</a></div>
       </div>
 
-      <div class="row">
-        <div class="col-3">NAVER</div>
+      <div class="row" id="header-logo-search">
+        <div class="col-3">
+          <a href="#"><h1 id="main-logo"></h1></a>
+        </div>
         <div class="col-6">
-          <input type="text" />
-          <button>검색</button>
+          <form action="https://search.naver.com/search.naver" method="GET" class="input-group mb-3">
+            <input
+              name="query"
+              type="text"
+              class="form-control"
+              id="header-input"
+              placeholder=""
+              aria-describedby="button-addon2"
+            />
+            <button class="btn" type="button" id="button-addon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </fo>
         </div>
         <div class="col-3"></div>
       </div>
 
       <!-- nav바 -->
       <div class="row">
-        <div class="col-9">NAV</div>
-        <div class="col-3">날씨</div>
+        <div class="col-9">
+          <nav class="navbar navbar-expand navbar-light">
+            <div>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link green" href="#">메일</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link green" href="#">카페</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link green" href="#">블로그</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link green" href="#">지식iN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link green" href="#">쇼핑</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link green" href="#">쇼핑LIVE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link green" href="#">Pay</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link green" href="#">TV</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link black" href="#">사전</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link black" href="#">뉴스</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link black" href="#">증권</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link black" href="#">부동산</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link black" href="#">지도</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link black" href="#">VIBE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link black" href="#">책</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link black" href="#">웹툰</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-3" id="nav-weather">미세 <strong class="weather_good">좋음</strong> | 초미세 <strong class="weather_good">좋음</strong> <a href="#">이도이동</a></div>
       </div>
 
       <!-- main -->
       <div class="row">
         <div class="col-8">
-          <div>한 줄 뉴스</div>
-          <div>언론사 소개</div>
-          <div class="row">
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-            <div class="col-2">언론사</div>
-          </div>
-          <div>읽을만한 글 소개</div>
-          <div>읽을만한 글 NAV</div>
-          <div class="row">
-            <div class="col-7">메인동영상</div>
-            <div class="col-5">
-              <div>서브동영상</div>
-              <div>서브동영상</div>
-              <div>서브동영상</div>
+          <div class="card" id="oneline-news-card">
+            <div class="card-body">
+              <div id="oneline-news">연합뉴스 > (한줄 뉴스 구현)</div>
+              <ul class="nav oneline-news-ul">
+                <li class="nav-item">
+                  <a class="nav-link blue" href="#">뉴스홈</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">연예</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">스포츠</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">경제</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div>연예NAV</div>
-          <div class="row">
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
+          <div id="press-title">
+            <div>
+              <span
+                class="iconify"
+                data-icon="zondicons:news-paper"
+                data-rotate="270deg"
+              ></span>
+              <a href="#">뉴스스탠드 ></a>
+              <a href="#">구독한 언론사</a>
+              <a href="">전체언론사</a>
+            </div>
+            <div id="press-title-icons">
+              <a href="#"
+                ><span class="iconify" data-icon="ci:list-checklist"></span
+              ></a>
+              <a href="#"
+                ><span class="iconify" data-icon="ph:squares-four-fill"></span
+              ></a>
+              <a href="#"
+                ><span
+                  class="iconify"
+                  data-icon="icon-park-solid:setting"
+                ></span
+              ></a>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
+          <div class="row" id="total-press">
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/368.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/031.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/215.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/376.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/008.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/003.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/139.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/925.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/344.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/013.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/122.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/991.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/353.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/961.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/957.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/815.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/312.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/802.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/807.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/810.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/477.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/816.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/959.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  height="20"
+                  src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/943.png"
+                  alt=""
+              /></a>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
+          <div id="today-writing">
+            <div id="today-writing-title">
+              오늘 읽을만한 글
+              <span id="today-writing-title-sub">
+                주제별로 분류된 다양한 글 모음
+              </span>
+            </div>
+            <div id="today-writing-setting">
+              <span>674개의 글</span>
+              <span
+                ><span
+                  class="iconify"
+                  data-icon="icon-park-solid:setting"
+                ></span
+                >관심주제 설정</span
+              >
+            </div>
           </div>
-          <div>뮤직차트 타이틀</div>
+          <div class="row" id="today-writing-nav">
+            <div class="today-writing-list active"><a href="#">엔터</a></div>
+            <div class="today-writing-list"><a href="">스포츠</a></div>
+            <div class="today-writing-list"><a href="">자동차</a></div>
+            <div class="today-writing-list"><a href="">웹툰</a></div>
+            <div class="today-writing-list"><a href="">경제</a></div>
+            <div class="today-writing-list"><a href="">추천-구독</a></div>
+            <div class="today-writing-list"><a href="">레시피</a></div>
+            <div class="today-writing-list"><a href="">리빙</a></div>
+          </div>
           <div class="row">
             <div class="col-6">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-              <div>4</div>
-              <div>5</div>
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/static/www/mobile/edit/20220710/cropImg_728x360_99395946830127485.jpeg"
+                  alt="영상이미지1"
+                  id="main-video"
+                />
+                <div class="video-writing">
+                  <div class="video-title">안나</div>
+                  <div class="video-produce">
+                    5화 하이라이트|지훈과 안나의 갈등
+                  </div>
+                  <div class="video-from">쿠팡플레이</div>
+                </div>
+              </a>
             </div>
             <div class="col-6">
-              <div>6</div>
-              <div>7</div>
-              <div>8</div>
-              <div>9</div>
-              <div>10</div>
+              <div class="sub-video">
+                <a href=""
+                  ><img
+                    src="https://s.pstatic.net/static/www/mobile/edit/20220711/cropImg_196x196_99443559249709067.jpeg"
+                    alt="영상이미지2"
+                    class="sub-video-img"
+                  />
+                  <div class="video-writing">
+                    <div class="video-title">제로섬게임</div>
+                    <div class="video-produce">
+                      이게 되네? 0kg를 만든 참가자들🙊<br />
+                      찐 제로섬 게임 시작
+                    </div>
+                    <div class="video-from">티빙</div>
+                  </div>
+                </a>
+              </div>
+              <div class="sub-video">
+                <a href=""
+                  ><img
+                    src="https://s.pstatic.net/static/www/mobile/edit/20220711/cropImg_196x196_99443493171378676.png"
+                    alt="영상이미지1"
+                    class="sub-video-img"
+                  />
+                  <div class="video-writing">
+                    <div class="video-title">블랙의 신부</div>
+                    <div class="video-produce">
+                      멈출 수 없는 욕망<br />
+                      블랙의 신부
+                    </div>
+                    <div class="video-from">넷플릭스</div>
+                  </div>
+                </a>
+              </div>
+              <div class="sub-video">
+                <a href=""
+                  ><img
+                    src="https://s.pstatic.net/static/www/mobile/edit/20220711/cropImg_196x196_99443525262536077.jpeg"
+                    alt="영상이미지1"
+                    class="sub-video-img"
+                  />
+                  <div class="video-writing">
+                    <div class="video-title">카터</div>
+                    <div class="video-produce">
+                      Skip 절대 불가 <br />
+                      논스톱 리얼타임 액션
+                    </div>
+                    <div class="video-from">넷플릭스</div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
+          <div>
+            <div class="card" id="entertainment-card">
+              <div class="card-body">
+                <ul class="nav entertainment-ul">
+                  <li class="nav-item">
+                    <a class="nav-link pink" href="#">연예 홈</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">네이버 NOW.</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">네이버 TV홈</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">TOP100</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">시리즈온</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">V LIVE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">VIBE</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
+          <div class="row normal-videos">
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fphinf.pstatic.net%2Ftvcast%2F20220208_90%2FZ7uWG_1644314034580RHv4q_PNG%2F1644313896713.png%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">웹예능</div>
+                  <div class="video-produce">
+                    [홀인러브] 등장 한 번에 모든 시선 집중 시킨 그녀의 아우라✨
+                  </div>
+                  <div class="video-from">홀인러브 (Hole in Love Part1)</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20220705_196%2FJwjZy_1656947818354ouVkP_JPEG%2F8Px1656925590127-1280-0.jpg%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">TV 예능</div>
+                  <div class="video-produce">
+                    김호중 - 고맙소 (COVER) | THE 트롯SHOW : 드림콘서트 특집 2부
+                    220704
+                  </div>
+                  <div class="video-from">더트롯쇼</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20220710_53%2F0Y0XA_16574497816772rnAt_JPEG%2F20220710_193810_961_1.jpg%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">TV 예능</div>
+                  <div class="video-produce">
+                    손흥민이 '한솥밥' 조소현에게 보냈던 영상 편지✉️ | JTBC
+                    220710 방송
+                  </div>
+                  <div class="video-from">뭉쳐야 찬다2</div>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
-            <div class="col-4">동영상</div>
+          <div class="row normal-videos">
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20220710_127%2F8NqTU_1657456318735hcwdY_JPEG%2Fd1bab64f-5185-4263-9e0c-92e1b634dcbf_B.jpg%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">TV 드라마</div>
+                  <div class="video-produce">
+                    정소민, 가까스로 환혼술 피한 이재욱에 안도의 눈물 포옹ㅠㅠ |
+                    tvN 220710 방송
+                  </div>
+                  <div class="video-from">환혼</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20220711_21%2FrgxuA_1657482182644hcKM1_JPEG%2Ff756e575-074d-4bfc-8366-5fc187826dc1.jpg%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">TV 예능</div>
+                  <div class="video-produce">
+                    김희철×김종민, 알콩달콩한 김준호♥김지민 커플에 부러움 가득!
+                  </div>
+                  <div class="video-from">미운 우리 새끼</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fphinf.pstatic.net%2Ftvcast%2F20220209_239%2FLcGFB_1644382713037NEMLx_PNG%2F1644382704930.png%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">웹예능</div>
+                  <div class="video-produce">
+                    [홀인러브] 역대급 ‘직진’남 김강열도 반한 매너남의 ‘정.석’
+                    (ft. 티슈)
+                  </div>
+                  <div class="video-from">홀인러브 (Hole in Love Part1)</div>
+                </div>
+              </a>
+            </div>
           </div>
-          <div>VIBE MAG></div>
-          <div>VIBE NAV바 + 더보기</div>
+          <div class="row normal-videos">
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fphinf.pstatic.net%2Ftvcast%2F20210808_213%2FLsP41_1628421531141ucQPk_PNG%2F1628421453988.png%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">웹드라마</div>
+                  <div class="video-produce">
+                    [툰밤지기] 회사 동료와 하룻밤을 보냈습니다..
+                  </div>
+                  <div class="video-from">네이버 웹툰</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20220710_264%2F4huoJ_1657459019968GAD3I_JPEG%2F20220710_220110_609_1.jpg%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">TV 드라마</div>
+                  <div class="video-produce">
+                    [깜짝 엔딩] 낯선 모습으로 염정아 눈앞에 나타난 이무생?! |
+                    JTBC 220710 방송
+                  </div>
+                  <div class="video-from">클리닝 업</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fphinf.pstatic.net%2Ftvcast%2F20220209_39%2Fv7fJd_164438162266270Jhm_PNG%2F1644381616731.png%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">웹예능</div>
+                  <div class="video-produce">
+                    [홀인러브] 차갑게만 보이던 그녀는 스윗한 ‘가죽공방
+                    선생님’?😲
+                  </div>
+                  <div class="video-from">홀인러브 (Hole in Love Part1)</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div id="music-chart-title">
+            <div id="music-chart-title-name">
+              <a href="#">뮤직 급상승 차트 ></a>
+            </div>
+            <div id="music-chart-update">오후 1시 업데이트</div>
+            </div>
+            <div class="row chart_view_wrap type_music">
+              <div class="col-6">
+                <div class="chart-area">
+                <div class="chart_rank">
+                  <em class="rank">1</em>
+                  <span class="blind">위</span>
+                </div>
+                <div class="chart_info">
+                  <a
+                    href="https://vibe.naver.com/track/55802116"
+                    target="_blank"
+                    class="thumb_box"
+                    ><img
+                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F007%2F691%2F7691778.jpg%3Ftype%3Dr480Fll%26v%3D20220711095409%22&type=navermain_n96_96"
+                      alt="그때 그 순간 그대로(그그그)"
+                      height="48"
+                      width="48"
+                      onerror="this.outerHTML='<span class=\'pm_noimg\'><span class=\'noimg_text\'>이미지 준비중</span></span>'" />
+                    <span class="thumb_bd"></span
+                  ></a>
+                  <div class="info_box">
+                    <a
+                      href="https://vibe.naver.com/track/55802116"
+                      target="_blank"
+                      class="music_title"
+                      >그때 그 순간 그대로</a
+                    >
+                    <div class="dsc_wrap">
+                      <span class="dsc">WSG워너비(가야G)</span>
+                      <span class="dsc">- WSG워너비 1집</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart_link">
+                  <a href="#" class="link_play">
+                    <span class="blind">재생</span>
+                  </a>
+                  <a href="#" class="link_lyrics">
+                    <span class="blind">가사</span>
+                  </a>
+                </div>
+                </div>
+                <div class="chart-area">
+                <div class="chart_rank">
+                  <em class="rank">2</em>
+                  <span class="blind">위</span>
+                </div>
+                <div class="chart_info">
+                  <a
+                    href="https://vibe.naver.com/track/55802116"
+                    target="_blank"
+                    class="thumb_box"
+                    ><img
+                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F007%2F691%2F7691778.jpg%3Ftype%3Dr480Fll%26v%3D20220711095409%22&type=navermain_n96_96"
+                      alt="보고싶었어"
+                      height="48"
+                      width="48"
+                      onerror="this.outerHTML='<span class=\'pm_noimg\'><span class=\'noimg_text\'>이미지 준비중</span></span>'" />
+                    <span class="thumb_bd"></span
+                  ></a>
+                  <div class="info_box">
+                    <a
+                      href="https://vibe.naver.com/track/55802116"
+                      target="_blank"
+                      class="music_title"
+                      >보고싶었어</a
+                    >
+                    <div class="dsc_wrap">
+                      <span class="dsc">WSG워너비(4FIRE)</span>
+                      <span class="dsc">- WSG워너비 1집</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart_link">
+                  <a href="#" class="link_play">
+                    <span class="blind">재생</span>
+                  </a>
+                  <a href="#" class="link_lyrics">
+                    <span class="blind">가사</span>
+                  </a>
+                </div>
+                </div>
+                <div class="chart-area">
+                <div class="chart_rank">
+                  <em class="rank">3</em>
+                  <span class="blind">위</span>
+                </div>
+                <div class="chart_info">
+                  <a
+                    href="https://vibe.naver.com/track/55802116"
+                    target="_blank"
+                    class="thumb_box"
+                    ><img
+                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F007%2F578%2F7578969.jpg%3Ftype%3Dr480Fll%26v%3D20220708173426%22&type=navermain_n96_96"
+                      alt="Girls"
+                      height="48"
+                      width="48"
+                      onerror="this.outerHTML='<span class=\'pm_noimg\'><span class=\'noimg_text\'>이미지 준비중</span></span>'" />
+                    <span class="thumb_bd"></span
+                  ></a>
+                  <div class="info_box">
+                    <a
+                      href="https://vibe.naver.com/track/55802116"
+                      target="_blank"
+                      class="music_title"
+                      >Girls</a
+                    >
+                    <div class="dsc_wrap">
+                      <span class="dsc">aespa</span>
+                      <span class="dsc">- Girls - The 2nd Mini Album</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart_link">
+                  <a href="#" class="link_play">
+                    <span class="blind">재생</span>
+                  </a>
+                  <a href="#" class="link_lyrics">
+                    <span class="blind">가사</span>
+                  </a>
+                </div>
+                </div>
+                <div class="chart-area">
+                <div class="chart_rank">
+                  <em class="rank">4</em>
+                  <span class="blind">위</span>
+                </div>
+                <div class="chart_info">
+                  <a
+                    href="https://vibe.naver.com/track/55802116"
+                    target="_blank"
+                    class="thumb_box"
+                    ><img
+                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F007%2F619%2F7619397.jpg%3Ftype%3Dr480Fll%26v%3D20220627175907%22&type=navermain_n96_96"
+                      alt="Up And"
+                      height="48"
+                      width="48"
+                      onerror="this.outerHTML='<span class=\'pm_noimg\'><span class=\'noimg_text\'>이미지 준비중</span></span>'" />
+                    <span class="thumb_bd"></span
+                  ></a>
+                  <div class="info_box">
+                    <a
+                      href="https://vibe.naver.com/track/55802116"
+                      target="_blank"
+                      class="music_title"
+                      >Up And</a
+                    >
+                    <div class="dsc_wrap">
+                      <span class="dsc">프로미스나인</span>
+                      <span class="dsc">- from our Memento Box</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart_link">
+                  <a href="#" class="link_play">
+                    <span class="blind">재생</span>
+                  </a>
+                  <a href="#" class="link_lyrics">
+                    <span class="blind">가사</span>
+                  </a>
+                </div>
+                </div>
+                <div class="chart-area">
+                <div class="chart_rank">
+                  <em class="rank">5</em>
+                  <span class="blind">위</span>
+                </div>
+                <div class="chart_info">
+                  <a
+                    href="https://vibe.naver.com/track/55802116"
+                    target="_blank"
+                    class="thumb_box"
+                    ><img
+                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F007%2F676%2F7676026.jpg%3Ftype%3Dr480Fll%26v%3D20220706175903%22&type=navermain_n96_96"
+                      alt="SIESTA"
+                      height="48"
+                      width="48"
+                      onerror="this.outerHTML='<span class=\'pm_noimg\'><span class=\'noimg_text\'>이미지 준비중</span></span>'" />
+                    <span class="thumb_bd"></span
+                  ></a>
+                  <div class="info_box">
+                    <a
+                      href="https://vibe.naver.com/track/55802116"
+                      target="_blank"
+                      class="music_title"
+                      >SIESTA</a
+                    >
+                    <div class="dsc_wrap">
+                      <span class="dsc">VIVIZ(비비지)</span>
+                      <span class="dsc">- The 2nd Mini Album 'Summer Vibe'</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart_link">
+                  <a href="#" class="link_play">
+                    <span class="blind">재생</span>
+                  </a>
+                  <a href="#" class="link_lyrics">
+                    <span class="blind">가사</span>
+                  </a>
+                </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="chart-area">
+                <div class="chart_rank">
+                  <em class="rank">6</em>
+                  <span class="blind">위</span>
+                </div>
+                <div class="chart_info">
+                  <a
+                    href="https://vibe.naver.com/track/55802116"
+                    target="_blank"
+                    class="thumb_box"
+                    ><img
+                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F007%2F670%2F7670547.jpg%3Ftype%3Dr480Fll%26v%3D20220705175911%22&type=navermain_n96_96"
+                      alt="Done"
+                      height="48"
+                      width="48"
+                      onerror="this.outerHTML='<span class=\'pm_noimg\'><span class=\'noimg_text\'>이미지 준비중</span></span>'" />
+                    <span class="thumb_bd"></span
+                  ></a>
+                  <div class="info_box">
+                    <a
+                      href="https://vibe.naver.com/track/55802116"
+                      target="_blank"
+                      class="music_title"
+                      >Done</a
+                    >
+                    <div class="dsc_wrap">
+                      <span class="dsc">우주소녀</span>
+                      <span class="dsc">- Sequence</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart_link">
+                  <a href="#" class="link_play">
+                    <span class="blind">재생</span>
+                  </a>
+                  <a href="#" class="link_lyrics">
+                    <span class="blind">가사</span>
+                  </a>
+                </div>
+                </div>
+                <div class="chart-area">
+                <div class="chart_rank">
+                  <em class="rank">7</em>
+                  <span class="blind">위</span>
+                </div>
+                <div class="chart_info">
+                  <a
+                    href="https://vibe.naver.com/track/55802116"
+                    target="_blank"
+                    class="thumb_box"
+                    ><img
+                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F007%2F617%2F7617998.jpg%3Ftype%3Dr480Fll%26v%3D20220628123409%22&type=navermain_n96_96"
+                      alt="미안하오"
+                      height="48"
+                      width="48"
+                      onerror="this.outerHTML='<span class=\'pm_noimg\'><span class=\'noimg_text\'>이미지 준비중</span></span>'" />
+                    <span class="thumb_bd"></span
+                  ></a>
+                  <div class="info_box">
+                    <a
+                      href="https://vibe.naver.com/track/55802116"
+                      target="_blank"
+                      class="music_title"
+                      >미안하오</a
+                    >
+                    <div class="dsc_wrap">
+                      <span class="dsc">김희재</span>
+                      <span class="dsc">- 희재 (熙栽)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart_link">
+                  <a href="#" class="link_play">
+                    <span class="blind">재생</span>
+                  </a>
+                  <a href="#" class="link_lyrics">
+                    <span class="blind">가사</span>
+                  </a>
+                </div>
+                </div>
+                <div class="chart-area">
+                <div class="chart_rank">
+                  <em class="rank">8</em>
+                  <span class="blind">위</span>
+                </div>
+                <div class="chart_info">
+                  <a
+                    href="https://vibe.naver.com/track/55802116"
+                    target="_blank"
+                    class="thumb_box"
+                    ><img
+                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F007%2F670%2F7670625.jpg%3Ftype%3Dr480Fll%26v%3D20220707154508%22&type=navermain_n96_96"
+                      alt="I LUV U (with 미란이)"
+                      height="48"
+                      width="48"
+                      onerror="this.outerHTML='<span class=\'pm_noimg\'><span class=\'noimg_text\'>이미지 준비중</span></span>'" />
+                    <span class="thumb_bd"></span
+                  ></a>
+                  <div class="info_box">
+                    <a
+                      href="https://vibe.naver.com/track/55802116"
+                      target="_blank"
+                      class="music_title"
+                      >I LUV U (with 미란이)</a
+                    >
+                    <div class="dsc_wrap">
+                      <span class="dsc">김종국, KCM</span>
+                      <span class="dsc">- I LUV U (with 미란이)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart_link">
+                  <a href="#" class="link_play">
+                    <span class="blind">재생</span>
+                  </a>
+                  <a href="#" class="link_lyrics">
+                    <span class="blind">가사</span>
+                  </a>
+                </div>
+                </div>
+                <div class="chart-area">
+                <div class="chart_rank">
+                  <em class="rank">9</em>
+                  <span class="blind">위</span>
+                </div>
+                <div class="chart_info">
+                  <a
+                    href="https://vibe.naver.com/track/55802116"
+                    target="_blank"
+                    class="thumb_box"
+                    ><img
+                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F007%2F616%2F7616238.jpg%3Ftype%3Dr480Fll%26v%3D20220624100208%22&type=navermain_n96_96"
+                      alt="Alright"
+                      height="48"
+                      width="48"
+                      onerror="this.outerHTML='<span class=\'pm_noimg\'><span class=\'noimg_text\'>이미지 준비중</span></span>'" />
+                    <span class="thumb_bd"></span
+                  ></a>
+                  <div class="info_box">
+                    <a
+                      href="https://vibe.naver.com/track/55802116"
+                      target="_blank"
+                      class="music_title"
+                      >Alright</a
+                    >
+                    <div class="dsc_wrap">
+                      <span class="dsc">베이식(Basick), 정동원</span>
+                      <span class="dsc">- 구필수는 없다 OST Part 10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart_link">
+                  <a href="#" class="link_play">
+                    <span class="blind">재생</span>
+                  </a>
+                  <a href="#" class="link_lyrics">
+                    <span class="blind">가사</span>
+                  </a>
+                </div>
+                </div>
+                <div class="chart-area">
+                <div class="chart_rank">
+                  <em class="rank">10</em>
+                  <span class="blind">위</span>
+                </div>
+                <div class="chart_info">
+                  <a
+                    href="https://vibe.naver.com/track/55802116"
+                    target="_blank"
+                    class="thumb_box"
+                    ><img
+                      src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F007%2F617%2F7617005.jpg%3Ftype%3Dr480Fll%26v%3D20220624165511%22&type=navermain_n96_96"
+                      alt="질투"
+                      height="48"
+                      width="48"
+                      onerror="this.outerHTML='<span class=\'pm_noimg\'><span class=\'noimg_text\'>이미지 준비중</span></span>'" />
+                    <span class="thumb_bd"></span
+                  ></a>
+                  <div class="info_box">
+                    <a
+                      href="https://vibe.naver.com/track/55802116"
+                      target="_blank"
+                      class="music_title"
+                      >질투</a
+                    >
+                    <div class="dsc_wrap">
+                      <span class="dsc">이병찬</span>
+                      <span class="dsc">- 국가가 부른다 Part 17</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart_link">
+                  <a href="#" class="link_play">
+                    <span class="blind">재생</span>
+                  </a>
+                  <a href="#" class="link_lyrics">
+                    <span class="blind">가사</span>
+                  </a>
+                </div>
+              </divcl>
+              </div>
+            </div>
+          </div>
+
+          <div class="row normal-videos">
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fphinf.pstatic.net%2Ftvcast%2F20220208_90%2FZ7uWG_1644314034580RHv4q_PNG%2F1644313896713.png%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">웹예능</div>
+                  <div class="video-produce">
+                    [홀인러브] 등장 한 번에 모든 시선 집중 시킨 그녀의 아우라✨
+                  </div>
+                  <div class="video-from">홀인러브 (Hole in Love Part1)</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20220705_196%2FJwjZy_1656947818354ouVkP_JPEG%2F8Px1656925590127-1280-0.jpg%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">TV 예능</div>
+                  <div class="video-produce">
+                    김호중 - 고맙소 (COVER) | THE 트롯SHOW : 드림콘서트 특집 2부
+                    220704
+                  </div>
+                  <div class="video-from">더트롯쇼</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20220710_53%2F0Y0XA_16574497816772rnAt_JPEG%2F20220710_193810_961_1.jpg%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">TV 예능</div>
+                  <div class="video-produce">
+                    손흥민이 '한솥밥' 조소현에게 보냈던 영상 편지✉️ | JTBC
+                    220710 방송
+                  </div>
+                  <div class="video-from">뭉쳐야 찬다2</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row normal-videos">
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20220710_127%2F8NqTU_1657456318735hcwdY_JPEG%2Fd1bab64f-5185-4263-9e0c-92e1b634dcbf_B.jpg%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">TV 드라마</div>
+                  <div class="video-produce">
+                    정소민, 가까스로 환혼술 피한 이재욱에 안도의 눈물 포옹ㅠㅠ |
+                    tvN 220710 방송
+                  </div>
+                  <div class="video-from">환혼</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20220711_21%2FrgxuA_1657482182644hcKM1_JPEG%2Ff756e575-074d-4bfc-8366-5fc187826dc1.jpg%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">TV 예능</div>
+                  <div class="video-produce">
+                    김희철×김종민, 알콩달콩한 김준호♥김지민 커플에 부러움 가득!
+                  </div>
+                  <div class="video-from">미운 우리 새끼</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fphinf.pstatic.net%2Ftvcast%2F20220209_239%2FLcGFB_1644382713037NEMLx_PNG%2F1644382704930.png%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">웹예능</div>
+                  <div class="video-produce">
+                    [홀인러브] 역대급 ‘직진’남 김강열도 반한 매너남의 ‘정.석’
+                    (ft. 티슈)
+                  </div>
+                  <div class="video-from">홀인러브 (Hole in Love Part1)</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row normal-videos">
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fphinf.pstatic.net%2Ftvcast%2F20210808_213%2FLsP41_1628421531141ucQPk_PNG%2F1628421453988.png%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">웹드라마</div>
+                  <div class="video-produce">
+                    [툰밤지기] 회사 동료와 하룻밤을 보냈습니다..
+                  </div>
+                  <div class="video-from">네이버 웹툰</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20220710_264%2F4huoJ_1657459019968GAD3I_JPEG%2F20220710_220110_609_1.jpg%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">TV 드라마</div>
+                  <div class="video-produce">
+                    [깜짝 엔딩] 낯선 모습으로 염정아 눈앞에 나타난 이무생?! |
+                    JTBC 220710 방송
+                  </div>
+                  <div class="video-from">클리닝 업</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href=""
+                ><img
+                  src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fphinf.pstatic.net%2Ftvcast%2F20220209_39%2Fv7fJd_164438162266270Jhm_PNG%2F1644381616731.png%22&type=nf464_260"
+                  alt="영상이미지1"
+                  class="normal-video-img"
+                />
+                <div class="video-writing">
+                  <div class="video-title">웹예능</div>
+                  <div class="video-produce">
+                    [홀인러브] 차갑게만 보이던 그녀는 스윗한 ‘가죽공방
+                    선생님’?😲
+                  </div>
+                  <div class="video-from">홀인러브 (Hole in Love Part1)</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="vibe_title">VIBE MAG></div>
+          <div class="vibe-nav">
+            <a class="vibe-writing">
+              <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusic-phinf.pstatic.net%2F20220218_148%2F1645165374099ORgFN_JPEG%2F%25C4%25BF%25B9%25F61.jpg%22&type=navermain_n260_260" width="130" height="130" alt="">
+              <div class="vibe-writing-title">5월의 느낌, 당신의 느낌은 어땠나요?</div>
+              <div class="vibe-writing-date">2022.05.20</div>
+            </a>
+            <a class="vibe-writing">
+              <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusic-phinf.pstatic.net%2F20220518_53%2F16528459530591PQqn_JPEG%2F%25C4%25BF%25B9%25F61.jpg%22&type=navermain_n260_260" width="130" height="130" alt="">
+              <div class="vibe-writing-title">AB6IX,  돌아온 구원자여</div>
+              <div class="vibe-writing-date">2022.05.18</div>
+            </a>
+            <a class="vibe-writing">
+              <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusic-phinf.pstatic.net%2F20220517_81%2F1652759462116e9CiR_JPEG%2F%25C4%25BF%25B9%25F61.jpg%22&type=navermain_n260_260" width="130" height="130" alt="">
+              <div class="vibe-writing-title">이주의 디깅 #134  켄드릭 라마</div>
+              <div class="vibe-writing-date">2022.05.17</div>
+            </a>
+            <a class="vibe-writing">
+              <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusic-phinf.pstatic.net%2F20220513_73%2F1652406578952Q2Vgi_JPEG%2F%25C4%25BF1.jpg%22&type=navermain_n260_260" width="130" height="130" alt="">
+              <div class="vibe-writing-title">한국 알앤비? 여기요! :  정기고, 김준원</div>
+              <div class="vibe-writing-date">2022.05.13</div>
+            </a>
+            <a class="vibe-writing">
+              <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fmusic-phinf.pstatic.net%2F20220516_253%2F1652687236924IK2Rt_JPEG%2F%25C4%25BF%25B9%25F61.jpg%22&type=navermain_n260_260" width="130" height="130" alt="">
+              <div class="vibe-writing-title">New Release #92 :  TXT, 켄드릭 라마</div>
+              <div class="vibe-writing-date">2022.05.16</div>
+            </a>
+          </div>
+        </div>
+        
+          <div class="col-4 right-side">
+            <div class="login-box">
+              <div class="card">
+                  <div class="gray">네이버를 더 안전하고 편리하게 이용하세요</div>
+                  <a href="#" class="btn green">NAVER 로그인</a>
+                  <div class="account">
+                    <div id="forget_account">
+                      <a href="#" id="forget_id">아이디</a>
+                      <a href="#" id="forget_password">비밀번호찾기</a>
+                    </div>
+                    <a href="#" id="join_account">회원가입</a>
+                  </div>
+              </div>
+              </div>
+              <div>증시</div>
+              <div>쇼핑몰 소개</div>
+              <div>쇼핑몰 종류</div>
+              <div class="row">
+                <div style="text-align: right">페이징넘버</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div class="col-4">사진</div>
+                <div>페이징넘버</div>
+              </div>
+              <div>쇼핑뉴스</div>
+              <div>광고배너1</div>
+              <div>광고배너2</div>
+            </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="row">
+        <div class="col-8">
+          <div>공지사항</div>
+          <div></div>
         </div>
         <div class="col-4">
-          <div>로그인박스</div>
-          <div>증시</div>
-          <div>쇼핑몰 소개</div>
-          <div>쇼핑몰 종류</div>
-          <div class="row">
-            <div style="text-align: right">페이징넘버</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div class="col-4">사진</div>
-            <div>페이징넘버</div>
-          </div>
+          <div>서비스 전체 보기</div>
         </div>
       </div>
     </div>
@@ -159,5 +1313,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   </body>
 </html>
