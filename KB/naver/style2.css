@@ -50,7 +50,7 @@
 
 
 .rootNaver svg{
-    margin : 0 0 2px 5px;
+    margin : 0 0 0px 15px;
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -66,7 +66,7 @@
     background-position: -308px -345px;
     position: absolute;
     top: 9px;
-    width: 2%;
+    width: 30px;
     height: 30px;
 }
 .rootPage:hover {
@@ -204,6 +204,25 @@
     background-size: 460px 434px;
     background-position: -445px -48px;
 }
+.nav > li:last-child > a {
+    font-size: 1.2em;
+    font-weight: 200;
+    margin-left: 10px;
+}
+.nav > li:last-child > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+.nav > li:last-child > a::after {
+    content: '';
+    width: 15px;
+    height: 10px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_4f8ccb.png);
+    background-size: 457px 434px;
+    background-position: -444px -338px;
+    margin-left: 10px;
+}
 
 .blackTab {
     color: black;
@@ -256,13 +275,27 @@
     white-space:nowrap;
     align-items: center;
 }
+.quickNews >div:nth-child(2) div>div a {
+    position: relative;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+}
+.quickNews >div:nth-child(2) div>div a {
+    position: relative;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+}
 .quickNews >div:nth-child(2) div>div:first-child >a {
     position: relative;
     font-size: 13px;
     font-weight: 900;
     text-decoration: none;
 }
-
+.quickNews >div:nth-child(2) div>div a:hover {
+    cursor: pointer;
+}
 
 .quickNewsHeader {
     display: flex;
@@ -316,14 +349,14 @@
     padding: 22px 0 16px 0;
     font-size: 14px;
 }
-
-.newsStand div a{
-    font-size: 14px;
+.newsStand_header {
+    white-space: nowrap;
 }
 .newsStand_header>a {
+    font-size: 14px;
     font-weight: 900;
 }
-.newsStand_header>a::before {
+.newsStand_header>a:first-child:before {
     content: '';
     display: inline-block;
     width: 26px;
@@ -333,3 +366,16 @@
     background-position: -336px -345px;
 }
 
+.newsStand_header>a:first-child::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_4f8ccb.png);
+    background-size: 457px 434px;
+    background-position: -435px -379px;
+}
+
+.newsStand_header>a:nth-child(2){
+    font-weight: 100;
+}
