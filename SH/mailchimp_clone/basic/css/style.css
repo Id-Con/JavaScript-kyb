@@ -1,0 +1,81 @@
+/* reset-css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+:root {
+  font-size: 10px;
+}
+
+/* init */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.iconify {
+  width: 30px;
+  height: 30px;
+}
+
+/* container */
+.container {
+  border: none;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+/* header */
+header {
+  background-color: #ffe01b;
+  font-size: 1.4rem;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header-상단 좌측 부분 */
+.header-nav {
+  display: flex;
+  width: 35%;
+  align-items: center;
+  padding-left: 2rem;
+}
+.header-nav li {
+  font-weight: 900;
+  padding: 1.2rem;
+}
+.header-nav li a {
+  color: #241c15;
+}
+
+/* header-상단 우측 부분 */
+
+.header-setting-menu {
+  display: flex;
+  padding-right: 2rem;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 35%;
+}
+.header-setting-menu div {
+  padding-right: 2rem;
+}
+.phone-number {
+  text-align: center;
+}
+.login-and-signup {
+}
+.login-and-signup button {
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: inherit;
+  padding: 1.2rem 1.6rem;
+}
