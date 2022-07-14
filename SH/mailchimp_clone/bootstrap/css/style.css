@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans:wght@300&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  font-size: 16px;
+}
+.container-fluid {
+  padding: 0;
+}
+
+.main-logo {
+  width: 30vw;
+  max-width: 200px;
+}
+
+nav {
+  font-weight: bold;
+}
+#header-nav:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+#header-setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#header-setting button {
+  margin: 0 5px;
+  white-space: nowrap;
+  padding: 0.8rem;
+}
+#header-setting svg {
+  margin: 0.8rem;
+}
+.phone-number {
+  font-size: 1rem;
+  flex: 1;
+  white-space: nowrap;
+}
+.header-info-title {
+  font-weight: bold;
+}
+#sign-up-button {
+  font-weight: bolder;
+  padding: 15px 30px;
+}
+
+#header-card {
+  text-align: start;
+}
+.main-card {
+  padding: 50px 0 50px 0;
+}
+#grow-image {
+  width: 200px;
+  margin: 0 auto;
+}
+.grow-card {
+  padding: 30px 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .phone-number {
+    display: none;
+  }
+  #language-icon {
+    display: none;
+  }
+  #search-icon {
+    display: none;
+  }
+  #login-button {
+    border: none;
+    color: black;
+    font-weight: bold;
+  }
+  #sign-up-free-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .phone-number {
+    font-size: 12px;
+  }
+  #language-icon {
+    display: none;
+  }
+  #search-icon {
+    display: none;
+  }
+  #login-button {
+    border: none;
+    color: black;
+    font-weight: bold;
+  }
+  #sign-up-free-button {
+    display: none;
+  }
+}
