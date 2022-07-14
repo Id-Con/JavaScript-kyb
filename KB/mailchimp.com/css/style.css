@@ -1,0 +1,122 @@
+* {margin: 0; padding: 0; box-sizing: border-box; font-size: 17px;}
+#wrap {}
+.pictureSet div{
+    display: flex;
+    justify-content: center;
+}
+
+
+#header_1 {  
+    background-color: #ffe01b;
+    padding: 1rem 3rem;
+    align-items: center;
+}
+#header_1 > div:nth-child(1) {
+    display: flex;
+    justify-content: flex-start;
+}
+#header_1 > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+#header_1 > div:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+}
+#header_1:hover {
+    transition: 0.5s;
+    background-color: #fff;
+}
+#header_2 {
+    padding: 2rem;
+    background-color: #ffe01b;
+}
+/* #header_2 >div >div >div:nth-child(2) {  
+    background-image: url(https://eep.io/images/yzco4xsimv0y/5EDYfjhY65uLjRNqcJQOKN/a7432a264639c40e2c00c6ffb593d828/Automations_-_Hero_Image_-_060622.png?w=1520&fm=webp&q=70);
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
+    background-position: 25%;
+} */
+
+
+#section_1 > div > div > p {
+    display: flex;
+    justify-content: center;
+}
+
+#section_2 > div > div > p {
+    display: flex;
+    justify-content: center;
+}
+#section_2 > div > div > div {
+    display: flex;
+    justify-content: center;
+}
+
+
+#section_3 > div > div > p {
+    display: flex;
+    justify-content: center;
+}
+#section_3 > div > div > div {
+    display: flex;
+    justify-content: center;
+}
+
+
+#section_4 > div > div > p {
+    display: flex;
+    justify-content: center;
+}
+
+#section_5 {
+    background-color: #ffe01b;
+}
+
+#section_5 > div {
+    display: flex;
+    justify-content: center;
+}
+
+
+.logIn {
+    background-color: inherit;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+}
+.logIn:hover {
+    background-color: gray;
+}
+.signUpFree {
+    width: 130%;
+    color: #fff;
+    background-color: #007c89;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+.svgDiv > svg {
+    font-size: 2rem;
+}
+
+.signUp {
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #007c89;
+    padding: 0.7rem 1.7rem;
+}
+
+
+@media screen and (min-width : 1100px) {
+    .svgDiv {display: none;}
+}
+@media screen and (max-width : 1099px) {
+    #header_1 > div  > div  p{
+        display: none;
+    }
+
+    .logIn {
+        border: none;
+    }
+}
