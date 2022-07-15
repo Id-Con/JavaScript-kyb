@@ -1,0 +1,135 @@
+.custom-shape-divider-bottom-1657853362 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1657853362 svg {
+  position: relative;
+  display: block;
+  width: calc(273% + 1.3px);
+  height: 97px;
+}
+
+.custom-shape-divider-bottom-1657853362 .shape-fill {
+  fill: #ffffff;
+}
+
+.gray {
+  color: gray;
+}
+/* 미디어 쿼리 */
+
+@media screen and (max-width: 992px) {
+  #header-content-title {
+    font-size: 7vw;
+  }
+  #header-content-wrapper {
+    text-align: center;
+  }
+  .hidden {
+    display: none;
+  }
+  #sticky {
+    display: none;
+  }
+}
+
+/* color */
+.navy {
+  background-color: #040d21;
+  color: white;
+}
+
+/* header */
+#header-wrapper {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(5, 0, 0, 255),
+    rgba(5, 13, 34, 255),
+    rgba(5, 13, 34, 255),
+    rgba(5, 13, 34, 255),
+    rgba(5, 16, 34, 255)
+  );
+  color: white;
+}
+#header-content-title {
+  font-size: 72px;
+}
+.who {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.white {
+  color: white;
+}
+
+/* main */
+#enterprise-card {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 10px;
+  width: 80%;
+}
+
+#main-inner-pages {
+  margin-top: 130px;
+}
+
+#sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.scroll-section {
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* Scroll Animation (sa, 스크롤 애니메이션) */
+.sa {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* 아래에서 위로 페이드 인 */
+.sa-up {
+  transform: translate(0, 100px);
+}
+/* 위에서 아래로 페이드 인 */
+.sa-down {
+  transform: translate(0, -100px);
+}
+/* 왼쪽에서 오른쪽으로 페이드 인 */
+.sa-right {
+  transform: translate(-100px, 0);
+}
+/* 오른쪽에서 왼쪽으로 페이드 인 */
+.sa-left {
+  transform: translate(100px, 0);
+}
+/* 왼쪽으로 회전하면서 페이드 인 */
+.sa-rotateL {
+  transform: rotate(180deg);
+}
+/* 오른쪽으로 회전하면서 페이드 인 */
+.sa-rotateR {
+  transform: rotate(-180deg);
+}
+/* 작아진 상태에서 커지면서 페이드 인 */
+.sa-scaleUp {
+  transform: scale(0.5);
+}
+/* 커진 상태에서 작아지면서 페이드 인 */
+.sa-scaleDown {
+  transform: scale(1.5);
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
