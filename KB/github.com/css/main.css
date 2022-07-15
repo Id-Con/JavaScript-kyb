@@ -1,6 +1,9 @@
 .container-fluid{
     background-color: #040d21
 }
+#fluidNone {
+    background-color: #fff;
+}
 
 /*header*/
 .githubLogo {
@@ -32,7 +35,7 @@
     border-radius: 8px;
     border: 1px solid #d0d7de;
     color: #d0d7de;
-    padding: .5rem 2.8rem .5rem 1rem;
+    padding: .5rem 2.5rem .5rem 1rem;
     font-size: .9rem;
     opacity: .9;
     background-color: inherit;
@@ -44,6 +47,7 @@
     border-radius: 8px;
     background-color: inherit;
 }
+
 
 /*section_1*/
 .section_1 {
@@ -62,13 +66,10 @@
 .section_1 > div:first-child > div:first-child {
     margin-top: 12rem;
 }
-
-
 .section_1 h1 {
     font-size: 4.8rem;
     font-weight: bolder;
 }
-
 .section_1 p {
     color: #8193b2;
     font-size: 1.6rem;
@@ -92,11 +93,9 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1.6rem 0;
 }
-
 .section_1 h3 {
     font-size: 1.333rem;
 }
-
 .section_1 > div > div > p {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, .4);
@@ -104,7 +103,132 @@
 .BtnWrap >input{
     margin-top: .5rem;
 }
+.statistics > div h3 {
+    text-align: center;
+}
+.statistics > div p {
+    text-align: center;
+}
 
+
+/*section_2*/
+.section_2 {
+    background-color: #fff;
+}
+.section_2 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_2 > div:first-child {
+    margin: 5rem 0 10rem 0;
+}
+.section_2 > div:first-child > div:last-child {
+    background-image: url(https://github.githubassets.com/images/modules/site/home/enterprise-city-w-logos.jpg?width=1100);
+}
+.midBox {
+    display: flex;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;  
+}
+.midBox_left {
+    margin-bottom: 1rem;
+}
+.midBox_left > button:last-child {
+    border: none;
+}
+.midBox_left > button:hover {
+    border : 1px solid black;
+}
+
+.midBox h3 {
+    color: #6e7781;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.midBox p {
+    color: #627597;
+}
+.midBox button {
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: inherit;
+    border-radius: 8px;
+    border: 1px solid #d0d7de;
+}
+.midBox_right {
+    display: flex;
+    justify-content: flex-end;
+}
+.midBox_right > img {
+    width: 100%;
+    height: auto;
+}
+
+.menuBar {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+.menuBar > div {
+    padding: 2rem;
+    text-align: center;
+}
+.menuBar > div > a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #040d21;
+    font-weight: 500;
+}
+.menuBar > div > a:hover {
+    text-decoration: underline;
+    color: rgb(115, 115, 223);
+}
+
+.contentMargin {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+
+/*body*/
+.body_1 {
+    background-color: #040d21;
+    border-radius: 8px;
+    color: #fff;
+    padding: 3rem;
+}
+.body_1 h2 {
+    font-size: 4.3rem;
+    color: #a2facf;
+    font-weight: bolder;
+}
+.body_1 p {
+    font-size: 1.8rem;
+}
+
+.body_1 >div>div>p>a {
+    font-size: 1.8rem;
+    color: #8193b2 !important;
+}
+
+.image_1 {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+@media screen and (max-width : 1010px) {
+    .section_2 > div:nth-child(2) {
+        display: none;
+    }
+}
 @media screen and (max-width : 991px){
     * {font-size: 13px;}
     .header_top_left > div:nth-child(2){
@@ -151,7 +275,14 @@
         font-size: 1.5rem;
         text-align: center;
     }
-@media screen and (max-width : 540px) {
+    .section_2 > div:nth-child(2) {
+        display: none;
+    }
+    .midBox_left {
+        text-align: center;
+    }
+}
+@media screen and (max-width : 539px) {
     .statistics > div:nth-child(3) {
         display: none;
     }
