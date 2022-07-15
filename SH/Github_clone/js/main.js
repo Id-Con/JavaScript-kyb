@@ -24,3 +24,9 @@
 AOS.init({
   duration: 1000,
 }); // 자바스크립트로 init()을 해야 동작한다.
+
+const sticky_nav = document.querySelector("#sticky");
+
+if (sticky_nav.offsetTop <= 1800) {
+  sticky_nav.classList.add("sticky_nav_white");
+}
