@@ -35,7 +35,9 @@
     /* promise방식이랑 비슷함 */
     $('#get').click(function(){
         let jQ = $.ajax({
-            url : './sample.json'
+            url : './sample.json',
+            method : 'GET',
+            dataType : 'json' //서버에서 return값의 형식
         })
         .done(function(data){
             console.log(data);
@@ -66,7 +68,7 @@
             url : './sample.json',
             method : 'post',
             data : { "name" : $name.value, "grade" : $grade.value, "job" : $job.value},
-            contentType : "application/json",
+            contentType : "application/json", //서버로 보내는 데이터 타입
             dataType : "json"
         })
         .done(function(data){

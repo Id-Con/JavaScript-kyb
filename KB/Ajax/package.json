@@ -1,0 +1,16 @@
+{
+  "name": "ajax",
+  "version": "1.0.0",
+  "description": "| Ajax통신의 기법 중 하나로 옛날 춘추전국시대 때 크로스 브라우징 문제를 해결하기 위해 등장",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
