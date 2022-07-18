@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>jQuery</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 00;
+    }
+    li {
+      list-style: none;
+    }
+    .parent {
+      height: 5000px;
+    }
+    .yellow-bg {
+      background: yellow;
+    }
+    .active {
+      background-color: orange;
+      color: white;
+    }
+  </style>
+  <body>
+    <h1 id="title">jQuery</h1>
+    <div class="parent">
+      <ul class="children_list">
+        <li>첫째</li>
+        <li>둘째</li>
+        <li>셋째</li>
+      </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // load, ready문법
+      window.onload = () => {
+        console.log("ready");
+      };
+      $(document).ready(() => {
+        console.log("ready");
+      });
+      $(() => {
+        console.log("ready");
+      });
+
+      // selector 문법
+      console.log($(".children_list"));
+      console.log($(".children_list li"));
+
+      // parent, children 문법
+      console.log($(".parent").children());
+      console.log($(".parent").children().parent());
+
+      // find 문법
+      console.log($(".children_list").find("li"));
+
+      // eq 문법(index번째 요소 찾기)
+      console.log($(".children_list li").eq(1));
+
+      // index 문법
+      $(".children_list li").on("click", function () {
+        const index = $(".children_list li").index(this);
+        console.log(index);
+      });
+
+      // addClass, removeClass, hasClass 문법
+      $(".children_list li").eq(1).addClass("active"); // 클래스 추가
+      $(".children_list li").eq(1).removeClass("active"); // 클래스 삭제
+      console.log($(".children_list li").eq(1).hasClass("active")); //false
+
+      // remove, prepend, append, appendTo, wrap 문법
+      $(".children_list li").eq(0).remove(); // 요소 삭제
+      $(".children_list").prepend("<li>새로운 첫째</li>"); // 요소 앞에 추가
+      $(".children_list").append("<li>새로운 넷째</li>"); // 요소 뒤에 추가
+      $("<li>새로운 다섯째</li>").appendTo(".children_list"); // 요소 뒤에 추가
+      $(".parent").wrap('<div class="wrap">'); // 요소를 감싸는 새로운 태그를 만듦
+
+      // css, removeAttr, attributing 문법
+      $(".children_list li").eq(1).css({
+        background: "skyblue",
+      }); // 요소의 css 추가
+      $(".children_list li").eq(1).removeAttr("style"); // 요소의 속성 제거
+      $(".children_list li").eq(1).attr("style", "background:salmon"); // 요소의 속성 추가
+      console.log($(".children_list li").eq(1).attr("style")); // 값을 가져올 수 도 있다.
+
+      // each 문법
+      $(".children_list li").each(function (index, list) {
+        console.log(index, list);
+      }); //forEach와 같은 반복문이다
+
+      // width, height, outerWidth, outerHeight 문법
+      console.log($(".children_list li").width()); // element의 여백(padding)을 제외한 너비값을 가져온다.
+      console.log($(".children_list li").outerWidth()); // element의 여백(padding)을 포함한 너비값을 가져온다.
+      console.log($(".children_list li").height()); // element의 여백(padding)을 제외한 높이값을 가져온다.
+      console.log($(".children_list li").outerHeight()); // element의 여백(padding)을 포함한 높이값을 가져온다.
+
+      // offset, position 문법
+      console.log($(".children_list li").offset()); // element의 left, top좌표를 가져온다.
+      console.log($(".children_list li").offset().top);
+      console.log($(".children_list li").position()); // element의 부모를 기준으로 left, top 좌표를 가져온다.
+
+      // text 문법
+      $(".children_list li").eq(0).text("text로 인해 바뀐 첫째"); //text를 바꾼다.
+
+      // fade, fadeOut, hide, show, animate 문법
+      $(".children_list li").eq(1).fadeOut(500); // 요소가 사라지는 애니메이션을 표현할 수 있다.
+      $(".children_list li").eq(1).fadeIn(500); // 요소가 등장 애니메이션을 표현할 수 있다.
+
+      $(".children_list li").eq(1).hide(1000); // 요소가 사라지는 애니메이션을 표현할 수 있다.
+      $(".children_list li").eq(1).show(1000); // 요소가 등장 애니메이션을 표현할 수 있다.
+
+      $(".children_list li").eq(1).slideUp(1500); // 요소가 사라지는 애니메이션을 표현할 수 있다.
+      $(".children_list li").eq(1).slideDown(1500); // 요소가 등장 애니메이션을 표현할 수 있다.
+
+      $(".children_list li")
+        .eq(0)
+        .animate(
+          {
+            height: "300px",
+          },
+          5000,
+          () => {
+            console.log("callback");
+          }
+        ); // 애니메이션과 speed를 설정 할 수 있다. 그리고 콜백함수도 설정할 수 있다.
+
+      // scrollLeft, scrollTop 문법
+      console.log($("html").scrollLeft()); // 스크롤에 가로 위치를 가져올 수 있다.
+      console.log($("html").scrollTop()); // 스크롤에 세로 위치를 가져올 수 있다.
+
+      // event
+      $(window).scroll(function () {
+        console.log("scroll event");
+      }); // scroll 이벤트 추가
+      $(window).resize(function () {
+        console.log("resize event");
+      }); // resize 이벤트 추가
+
+      $(".children_list li").on("click", function () {
+        console.log("click!", $(this).text());
+      }); // on을 이용한 click 이벤트 추가
+
+      $(".children_list li").off(); // 이벤트 제거
+    </script>
+  </body>
+</html>

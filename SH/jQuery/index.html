@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>선택한 요소의 저장</h1>
+
+    <ul>
+      <li>첫 번째 아이템이에요!</li>
+      <li>두 번째 아이템이에요!</li>
+      <li>세 번째 아이템이에요!</li>
+    </ul>
+    <button>선택된 요소의 길이는?</button>
+    <p id="len"></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        var items = $("li"); // <li>요소를 모두 선택하여 변수 items에 저장함.
+        console.log(items);
+        $("button").on("click", function () {
+          $("#len").text(
+            "저장된 <li>요소의 총 개수는 " + items.length + "개입니다."
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
