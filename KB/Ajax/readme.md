@@ -10,11 +10,11 @@
 
 ```
 $.ajax({
-    url : "url",
-    type : "POST",
+    url : 'url',
+    type : POST',
     data : { key : value },
-    contentType : "application/json; charset=utf-8", // 서버로 보내는 데이터 타입
-    dataType : "json", // 서버에서 어떤 타입을 받을 건지를 의미
+    contentType : 'application/json; charset=utf-8', // 서버로 보내는 데이터 타입
+    dataType : 'json', // 서버에서 어떤 타입을 받을 건지를 의미
 
     //아래 3개 애들은 jquery 3.0버전 부터 삭제됨
     //.success : function(){},
@@ -25,3 +25,20 @@ $.ajax({
 .fail(function(){})
 .always(function(){})
 ```
+
+## 번외 ) fetch
+
+```
+fetch('url',{
+    method : 'POST',
+    headers : {
+        'Content-Type' : 'apllication/json'
+    }
+    body : JSON.stringify({key : value})
+})
+.then((res)=> res.json())
+.then((data)=> console.log(`전송성공 : ${data}`))
+.catch((err)=> console.log(`실패 : ${err}`););
+```
+
+Jquery는 RESTFUL 하게만 사용하면 일단 쓸만 할듯??
