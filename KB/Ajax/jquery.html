@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>나의 JQuery 연습장</h1>
+    <form>
+        <fieldset>
+            <legend>데이터 가져오기</legend>
+            <input type="button" id="get" value="가져오기">
+            <ul id="listBody">
+            
+            </ul>
+        </fieldset>
+    </form>
+    <form action="./sample.json" id="submitBody">
+        <fieldset>
+            <legend>데이터 전송하기</legend>
+            이름 : </label><input type="text" name="name" id="name">
+            학년 : <input type="text" name="grade" id="grade">
+            분야 : <input type="text" name="job" id="job">
+            <input type="submit" value="전송">
+        </fieldset>    
+    </form>
+    
+    
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    let $listBody = document.querySelector('#listBody');
+
+    /* promise방식이랑 비슷함 */
+    $('#get').click(function(){
+        let jQ = $.ajax({
+            url : './sample.json'
+        })
+        .done(function(data){
+            console.log(data);
+            data.forEach((s)=>{
+                $listBody.innerHTML += `<li>이름 : ${s.name}, 학년 : ${s.grade}학년, 분야 : ${s.job}</li>`
+            })
+        })
+        .fail(function(err){
+            alert(`Error : ${err}`);
+        })
+        // .always(function(){
+        //     alert('무조건 한번 호출');
+        // })
+
+        
+        // jQ.always(function(){
+        //     alert('나중에 옵션 추가도 가능')
+        // })
+    })
+
+    $('#submitBody').submit(function(){
+        event.preventDefault();
+        let $name = document.querySelector('#name');
+        let $grade = document.querySelector('#grade');
+        let $job = document.querySelector('#job');
+       
+        let JQ = $.ajax({
+            url : './sample.json',
+            method : 'post',
+            data : { "name" : $name.value, "grade" : $grade.value, "job" : $job.value},
+            contentType : "application/json",
+            dataType : "json"
+        })
+        .done(function(data){
+            console.log(data);
+        })
+        .fail(function(err){
+            console.log(`에러 : ${err}`)
+        })
+        .always(function(){
+            console.log('finally랑 동일')
+        })
+
+        /* 초기화 */
+        $name.value = ``;
+        $grade.value = ``;
+        $job.value = ``;
+    })
+
+</script>
+</body>
+</html>
