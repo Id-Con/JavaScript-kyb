@@ -1,0 +1,61 @@
+/* :root {
+  font-size: 30px;
+}
+@media screen and (max-width: 1900px) {
+  :root {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 10px;
+  }
+} */
+
+@media screen and (max-width: 992px) {
+  .language {
+    display: none;
+  }
+}
+
+/* #1d1dc5 */
+body {
+  background-image: linear-gradient(
+    150deg,
+    #e3114e 1.5%,
+    #1d1dc5 0,
+    #1d1dc5 18%,
+    #ffc200 0,
+    #ffc200 75%,
+    black 0,
+    black 98%,
+    #1d1dc5 0
+  );
+  height: (100%-200px);
+
+  /* background: #1d1dc5; */
+}
+
+.wrapper {
+  padding: 0;
+}
+
+.language {
+  color: white;
+}
+
+#main-logo {
+  font-size: 32px;
+}
+
+.yellow-triangle {
+  /* border-right: 30vw solid #ffc200;
+  border-top: 7rem solid transparent;
+  border-left: solid transparent;
+  width: 100%;
+  height: 0; */
+}
+
+footer {
+  height: 200px;
+}
