@@ -28,9 +28,10 @@
 .header_nav > div:first-child > img {width: 100%; height: auto;}
 .hamburger {display: none;}
 
-.section {padding-top: 5rem; align-items: center;}
-.section > div > img {width: 100%; height: auto;}
+.section {padding-top: 6rem; align-items: center; flex-direction: row-reverse;}
+.section > div > img {width: 100%; height: auto; border: 1px solid rgba(0, 0, 0, .1); border-radius: 12px;}
 .section h3 {font-weight: 700; font-size: 2rem;}
+#lastSection {padding-bottom: 6rem; border-bottom: 1px solid rgba(0, 0, 0, .1);}
 
 
 @media screen and (max-width : 1379px) {
@@ -40,6 +41,9 @@
 
 /* 원래는 1020px */
 @media screen and (max-width : 991px) {
+
+
+
     .menuBar_left > div:nth-child(2) { display: none; }
     .menuBar_left > div:nth-child(3) { display: none; }
     .menuBar_left > div:nth-child(4) { display: none; }
@@ -55,6 +59,6 @@
     .header_nav > div:last-child {text-align: center;}
     .hamburger {display: flex;}
 
-    .section { flex-direction:column-reverse;}
+    .partners {justify-content: center;}
     .section h3 {font-weight: 700; font-size: 1.7rem;}
 }
