@@ -1,0 +1,30 @@
+.container-fluid { }
+
+
+.language {display: flex; justify-content: flex-end;}
+.language p {padding-right: 1rem;}
+.header > div {display: flex; justify-content: center; align-items: center; font-size: .9rem; padding: 0 !important;}
+.hamburger {display: none !important;}
+
+.tlqkf {position: relative;  z-index: -1 !important;}
+.tlqkfBtn {z-index: 0 !important; opacity: 1 !important; color: black !important;}
+.active > div {position: absolute; top: 50%; left: 0; transform: translate(-20%,-55%);}
+.carousel-caption h1 {color: #e3114e; font-size: 4rem; text-align: center;}
+
+
+.letterLine {margin-top: -500px; display: flex; align-items:center; font-size: 3.5rem;}
+.letterLine::after{ content: ''; flex: 1; margin-left: 1rem; height: .6rem; background-color: white;}
+
+
+@media (max-width : 991px){
+    .language {visibility: hidden;}
+    .header > div:nth-child(2) {display: none;}
+    .header > div:nth-child(3) {display: none;}
+    .header > div:nth-child(4) {display: none;}
+    .header > div:nth-child(5) {display: none;}
+    .header > div:nth-child(6) {display: none;}
+    .header > div:nth-child(7) {display: none;}
+    .header > div:nth-child(8) {display: none;}
+
+    .hamburger {display: block !important;}
+}
