@@ -1,0 +1,5 @@
+#header {position: relative; background-image: url("http://t1.kakaocdn.net/jewika/images/2022-04-04/0ae102522fe94a3996180f6735665e2d.png"); background-repeat: no-repeat; background-size: cover; color: #fff; padding: 0 !important;}
+#header::before {content: ''; width: 100%; height: 100%; position: absolute; background-color: rgba(0, 0, 0, 0.4); z-index: -1;}
+
+.kakaoYellow {color: var(--kakao--yellow); font-size: 6.5rem;}
+.main {font-size: 6.5rem !important;}

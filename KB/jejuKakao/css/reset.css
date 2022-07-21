@@ -1,0 +1,5 @@
+* {margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; font-size: 15px;}
+:root {
+    --kakao--yellow : rgb(255, 205, 2);
+}
+.longBtn {padding: .8rem 6rem; background-color: transparent; border: 1px solid #fff; color: #fff;}
