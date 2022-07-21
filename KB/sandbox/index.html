@@ -13,14 +13,14 @@
 </head>
 <body>
     
-      <div class="container-fluid">
+      <div class="main container-fluid">
         <div class="container-xxl">
             <div class="language">
                 <p>KOREAN</p>
                 <p>ENGLISH</p>
             </div>
             <div class="header row justify-content-between">
-                <div class="col-3 col-lg-2 col-sm-3 col-md-3"><img src="https://sandbox.co.kr/assets/images/common/sd_logo_bk.png" alt="" srcset=""></div>
+                <div class="col-3 col-lg-2 col-sm-3 col-md-3"><img src="https://sandbox.co.kr/assets/images/common/sd_logo.png" alt="" srcset=""></div>
                 <div class="col">크리에이터</div>
                 <div class="col">비즈니스</div>
                 <div class="col">샌드박스게이밍</div>
@@ -36,39 +36,284 @@
             </div>
 
             <!-- carousel -->
-            <div id="carouselExampleControls" class="tlqkf carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="bigCarousel carousel-item active">
                     <img src="https://sandbox.co.kr/cms/data/main/6/626f3ad889060.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>WE CREATE<br>BETTER<br>TOGETHER</h1>
-                        <h2>크리에이터와 함께<br>세상을 더 즐겁게</h2>
+                    <div class="famousSaying carouselCaption">
+                      <h1>WE CREATE<br>BETTER<br>TOGETHER</h1>
+                      <h2 class="ps-5">크리에이터와 함께<br>세상을 더 즐겁게</h2>
                     </div>
                 </div>
-                  <div class="carousel-item">
+                  <div class="bigCarousel carousel-item">
                     <img src="https://sandbox.co.kr/cms/data/main/13/626f3a727b4a3.png" class="d-block w-100" alt="...">
+                    <div class="famousSaying carouselCaption">
+                      <h1>CULTURE FOR<br>DIGITAL NATIVE</h1>
+                      <h2 class="ps-5">디지털 네이티브들을 위한<br>샌드박스만의 문화</h2>
+                    </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="bigCarousel carousel-item">
                     <img src="https://sandbox.co.kr/cms/data/main/15/626f3a7c8f2a7.png" class="d-block w-100" alt="...">
+                    <div class="famousSaying carouselCaption">
+                      <h1>PLAYGROUND<br>FOR<br>CREATORS</h1>
+                      <h2 class="ps-5">디지털 크리에이터들을 위한<br>창작 놀이터</h2>
+                    </div>
                   </div>
                 </div>
-                <button class="tlqkfBtn carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="height: auto;">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="height: auto;">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="tlqkfBtn carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
             </div>
 
-            <!-- section -->
-            <div style="z-index: 999; background-color: aquamarine;">
-                <div class="letterLine">NEW CREATORS</div>
-                <p>샌드박스의 새로운 크리에이터들을 소개합니다.</p>
-                asd
+            <!-- section_1 -->
+            <div class="section_1">
+              <div data-aos="fade-right" data-aos-easing="ease-in-back" class="letterLine">NEW CREATORS</div>
+              <p>샌드박스의 새로운 크리에이터들을 소개합니다.</p>
+              <div class="row">
+                <div class="col-3 col-sm-1"></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+              </div>
+
+              <div id="carouselExampleIndicators" class="creatorCarousel carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div id="creatorList"class="d-block w-100">
+                      <figure><img src="https://sandbox.co.kr/cms/data/creators/827/62bd6ad021936.jpg" alt="" srcset="">
+                        <figcaption><h3>빠니보틀 Pani Bottle</h3><div>124만명</div></figcaption></figure>
+                      <figure><img src="https://sandbox.co.kr/cms/data/creators/829/62bd6ab2d2a62.jpg" alt="" srcset="">
+                        <figcaption><h3>라이채널 Dorai Games</h3><div>9만명</div></figcaption></figure>
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLRdg4fHiQDb6fM55vluk460dQv2JX7ScQKPTFQs=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>앙찡</h3><div><p>6만 3천명</p><p>1만 5천명</p></div></figcaption></figure>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="creatorList" class="d-block w-100">
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLQBAi5TBFOKpKHI2wYw_sKBENE9ISPZR2wydNS9=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>Funkey</h3><div>9만 8천명</div></figcaption></figure>
+                      <figure><img src="https://sandbox.co.kr/cms/data/creators/813/62bd6b3638acc.jpg" alt="" srcset="">
+                        <figcaption><h3>박지영 TV</h3><div>4만 5천명</div></figcaption></figure>
+                      <figure><img src="https://sandbox.co.kr/cms/data/creators/824/62bd6af4a1e74.jpg" alt="" srcset="">
+                        <figcaption><h3>김오키 ZUYONI</h3><div>4만 5천명</div></figcaption></figure>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="creatorList" class="d-block w-100">
+                      <figure><img src="https://sandbox.co.kr/cms/data/creators/828/62bd6ac667224.jpg" alt="" srcset="">
+                        <figcaption><h3>곽튜브KWAKTUBE</h3><div>82만명</div></figcaption></figure>
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLTSO-esI1725vTHxdo8eifD4A-5F0xgLxVno1GozA=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>청원이</h3><div>42만명</div></figcaption></figure>
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLQpK3armLbZxRWnLBg44ii-IXYjrywf_Eu8vFnsfw=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>주연 ZUYONI</h3><div>58만명</div></figcaption></figure>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="creatorList" class="d-block w-100">
+                      <figure><img src="https://sandbox.co.kr/cms/data/creators/815/62bd6b29148b6.jpg" alt="" srcset="">
+                        <figcaption><h3>서기채널</h3><div>7만 8천명</div></figcaption></figure>
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLSBqRpBeENhnnTUynzooO0a7p4qp8wC5NocX8Jl=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>Funkey 뻘짓저장소</h3><div>2천명</div></figcaption></figure>
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLR7uAgU5uNt33x5PhhRtG6F3Ou1y8AYhLnzMvF3JA=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>나도Nado</h3><div>272만명</div></figcaption></figure>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="creatorList" class="d-block w-100">
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLSGFLLJQ74nCqEFOglA1QqLbtX7pO1S2kU5OWkrWg=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>흥삼이네 Heungsam'sFamily</h3><div>242만명</div></figcaption></figure>
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLSxOpq10-T6m43DMBkAni31UZ0Xx9BzHaGXR3dGPA=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>지식해적단</h3><div>70만명</div></figcaption></figure>
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLTBDikNlaH6qfOnSMA0N4Ng4NT9AaVvRJ03jUgH=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>Oh!윤아TV</h3><div>10만명</div></figcaption></figure>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="creatorList" class="d-block w-100">
+                      <figure><img src="https://sandbox.co.kr/cms/data/creators/833/62c53b04d6f4c.jpg" alt="" srcset="">
+                        <figcaption><h3>JadeU 제이드유</h3><div>1만명</div></figcaption></figure>
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLR16JM7RAn8LIfJ8uOCYgHFtooNniISw6sovk6HHA=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>윤지연YoonJeony</h3><div>2만 2천명</div></figcaption></figure>
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLR4lGpUnCTL3DghDgD_4EQ6eP7rAuKKoIDmb1xmVA=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>장성규니버스 K-universe</h3><div>20만명</div></figcaption></figure>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="creatorList" class="d-block w-100">
+                      <figure><img src="https://sandbox.co.kr/cms/data/creators/825/62bd6ae8ab303.jpg" alt="" srcset="">
+                        <figcaption><h3>해버 굿 나인 - Have A Good NAI</h3><div>12만명</div></figcaption></figure>
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLRLMpv8WtAifRpUIZhCCGZgbip0aZ658rbTmC6TZQ=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>나도나도DoDo</h3><div>41만명</div></figcaption></figure>
+                      <figure><img src="https://yt3.ggpht.com/ytc/AKedOLQX1MQAPmZ05ZSpYDM1IYthkuzDBqcqN1UUs5IRDg=s240-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+                        <figcaption><h3>판자집 강아지</h3><div>11만명</div></figcaption></figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                </div>
+              </div>
+            </div>
+            <!-- section_2 -->
+            <div class="section_2">
+              <div data-aos="fade-right" data-aos-easing="ease-in-back" class="letterLine">SANDBOX NEWS</div>
+              <p>샌드박스와 크리에이터들의 새로운 소식을 전합니다.</p>
+
+              <div class="newsPadding row justify-content-around">
+                <div class="newsWrap col-3">
+                  <div class="newsHeader">
+                    <img src="https://sandbox.co.kr/cms/data/news/241/62b00df4805f3.jpg" alt="" srcset="">
+                    <p>SANDBOX</p>
+                  </div>
+                  <div class="newsBody">
+                    <h5>샌드박스네트워크, 클레이튼과 함께 ‘천하제일 금손대회’ 개최</h5>
+                    <p>샌드박스네트워크가 클레이튼(Klaytn) 재단과 공동으로 유저가 직접 참여해 NFT 2차 창작물을 만들 수 있는 콘테스트를 개최합니다.</p>
+                  </div>
+                  <div class="newsFooter">
+                    2022 06 15
+                  </div>
+                </div>
+                <div class="newsWrap col-3">
+                  <div class="newsHeader">
+                    <img src="https://sandbox.co.kr/cms/data/news/240/62830608cd159.png" alt="" srcset="">
+                    <p>SANDBOX</p>
+                  </div>
+                  <div class="newsBody">
+                    <h5>샌드박스네트워크, 현대건설과 NFT·메타버스 비즈니스 업무협약 체결</h5>
+                    <p>샌드박스의 메타 토이 드래곤즈 커뮤니티에 현대건설이 합류하고 신규 NFT 및 메타버스 사업을 위해 손을 맞잡았습니다.</p>
+                  </div>
+                  <div class="newsFooter">
+                    2022 05 17
+                  </div>
+                </div>
+                <div class="newsWrap col-3">
+                  <div class="newsHeader">
+                    <img src="https://sandbox.co.kr/cms/data/news/239/62830354eecd7.png" alt="" srcset="">
+                    <p>SANDBOX</p>
+                  </div>
+                  <div class="newsBody">
+                    <h5>SBXG, ‘메타 게이머즈(MGZ)’ 토큰 생태계 출범</h5>
+                    <p>SBXG가 메타 토이 게이머즈를 바탕으로 메타 게이머즈 토큰 생태계를 출범합니다.</p>
+                  </div>
+                  <div class="newsFooter">
+                    2022 05 12
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-around">
+                <div class="newsWrap col-3">
+                  <div class="newsHeader">
+                    <img src="https://sandbox.co.kr/cms/data/news/238/627b3f48c3c23.png" alt="" srcset="">
+                    <p>SANDBOX</p>
+                  </div>
+                  <div class="newsBody">
+                    <h5>샌드박스, 뉴 아이디와 콘텐츠 파트너십 체결  K콘텐츠의 북남미 및 유럽 진출 가속화!</h5>
+                    <p>샌드박스가 차세대 콘텐츠 유통 플랫폼 기업 뉴 아이디와 콘텐츠 파트너십을 체결했습니다.</p>
+                  </div>
+                  <div class="newsFooter">
+                    2022 05 11
+                  </div>
+                </div>
+                <div class="newsWrap col-3">
+                  <div class="newsHeader">
+                    <div><img src="https://sandbox.co.kr/cms/data/news/237/626faef618829.jpg" alt="" srcset=""></div>
+                    <p>CREATOR</p>
+                  </div>
+                  <div class="newsBody">
+                    <h5>샌드박스네트워크, 이경규 공동대표의 연예 기획사 ‘앵그리독스’에 전략적 지분 투자</h5>
+                    <p>샌드박스네트워크가 종합 엔터테인먼트 기업 앵그리독스에 대한 전략적 지분 투자를 발표했습니다.</p>
+                  </div>
+                  <div class="newsFooter">
+                    2022 05 02
+                  </div>
+                </div>
+                <div class="newsWrap col-3">
+                  <div class="newsHeader">
+                    <div><img src="https://sandbox.co.kr/cms/data/news/236/626b8b841e235.jpg" alt="" srcset=""></div>
+                    <p>SANDBOX</p>
+                  </div>
+                  <div class="newsBody">
+                    <h5>샌드박스, 어린이날 100주년 맞아 팝업스토어 ‘샌박운동회’ 현대백화점 판교점에 오픈</h5>
+                    <p>샌드박스가 어린이날 제정 100주년을 기념해 현대백화점 판교점에 팝업스토어 '샌박운동회'를 운영합니다.</p>
+                  </div>
+                  <div class="newsFooter">
+                    2022 05 15
+                  </div>
+                </div>
+              </div>
+              <button class="recentNews">최신 뉴스 보러가기</button>
             </div>
             
+            <!-- section_3 -->
+            <div class="section_3">
+              <div data-aos="fade-right" data-aos-easing="ease-in-back" class="letterLine">CASE STUDY</div>
+              <p class="pt-3">샌드박스는 다양한 장르의 콘텐츠를 바탕으로<br>크리에이터들과 함께 성공적인 브랜드 콘텐츠를 제작하고 IP 사업을 진행합니다.</p>
+              <div class="btnGroup pt-5 pb-5">
+                <button class="d-flex me-4 pt-3 pb-3 ps-5 pe-5">브랜드 광고 성공 사례</button>
+                <button class="d-flex pt-3 pb-3 ps-5 pe-5">IP 사업 성공 사례</button>
+              </div>
+              <div class="famousSaying pt-5 pb-5">
+                <h1>WE CREATE DIGITAL<br>ENTERTAINMENT</h1>
+                <h2 class="ps-5">디지털 시대의 즐거움은<br>우리에 의해 다시 창조 됩니다.</h2>
+              </div>           
+            </div>
+        </div>
+      </div>
+      <div class="footer container-fluid pt-5 pb-5">
+        <div class="container-xxl">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-9">
+              <div class="row">
+                <div class="col-3">
+                  <img src="https://sandbox.co.kr/assets/images/common/sd_logo.png" alt="" srcset="">
+                </div>
+              </div>
+              <div class="policies d-flex pt-4 pb-4">
+                <div>샌드박스 최신 뉴스보기</div>
+                <p class="ps-1 pe-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                  </svg>
+                </p>
+                <div>샌드박스 포스트 보기</div>
+                <p class="ps-1 pe-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                  </svg>
+                </p>
+                <div>IR 공고</div>
+                <p class="ps-1 pe-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                  </svg>
+                </p>
+                <div>개인정보처리방침</div>
+              </div>
+              <h6 class="copyRight">Copyright © 2019 SANDBOX NETWORK Inc. All Rights Reserved E-mail : contact@sandboxnetwork.net</h6>
+            </div>
+            <div class="col-3 d-flex flex-column">
+              <div class="row g">
+                <div class="col d-flex justify-content-center align-items-center"><img src="https://sandbox.co.kr/assets/images/common/icon_sns_youtube.png" alt="" srcset=""></div>
+                <div class="col d-flex justify-content-center align-items-center"><img src="https://sandbox.co.kr/assets/images/common/icon_sns_facebook.png" alt=""></div>
+                <div class="col d-flex justify-content-center align-items-center"><img src="https://sandbox.co.kr/assets/images/common/icon_sns_insta.png" alt=""></div>
+              </div>
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"><img src="https://sandbox.co.kr/assets/images/common/footer_img_youtube_certified.png" alt=""></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </body>

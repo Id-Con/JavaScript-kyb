@@ -4,9 +4,9 @@
     font-weight: 900;
 }
 
-* {margin: 0; padding: 0; box-sizing: border-box; list-style: none !important; font-size: 17px;  font-family: 'sanbox_B';}
-/* body {background-color: aqua;} */
+* {margin: 0; padding: 0; box-sizing: border-box; list-style: none !important; font-size: 17px; color: whitesmoke; font-family: 'sanbox_B';}
 img {max-width: 100%; height: auto;}
+.famousSaying h1 {color: #e3114e; font-size: 4rem;}
 
 
 
