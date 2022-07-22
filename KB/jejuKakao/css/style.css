@@ -1,5 +1,30 @@
-#header {position: relative; background-image: url("http://t1.kakaocdn.net/jewika/images/2022-04-04/0ae102522fe94a3996180f6735665e2d.png"); background-repeat: no-repeat; background-size: cover; color: #fff; padding: 0 !important;}
-#header::before {content: ''; width: 100%; height: 100%; position: absolute; background-color: rgba(0, 0, 0, 0.4); z-index: -1;}
-
+#container_header {position: relative; background-image: url("http://t1.kakaocdn.net/jewika/images/2022-04-04/0ae102522fe94a3996180f6735665e2d.png"); background-repeat: no-repeat; background-size: cover; color: #fff; padding: 0 !important;}
+/* #container_header::before {display: block; content: ''; width: 100%; height: 100%; position: absolute; background-color: rgba(0, 0, 0, 0.4); z-index: -1;} */
 .kakaoYellow {color: var(--kakao--yellow); font-size: 6.5rem;}
 .main {font-size: 6.5rem !important;}
+.temperature {position: relative; font-size: 6.5rem;}
+.temperature::after {content: '℃'; font-size: 1.5rem; font-weight: normal; position: absolute; top: 15%;}
+.Travel {padding: 3rem 0 12rem 3rem; background-image: url('https://img1.daumcdn.net/thumb/C1240x400.q70/?fname=http://t1.kakaocdn.net/jewika/images/2020-11-23/0cb0e48149944461970ff984977efea9.jpg'); background-repeat: no-repeat; background-size: cover;}
+.longPadding { padding-bottom: 18rem;}
+#container_footer {background-image: url("https://t1.kakaocdn.net/jewika/images/footer_bg.png"); background-repeat: no-repeat; background-size: cover; color: #fff;}
+#loremName {position: absolute; top: 20%; width: 70%;}
+#lorem {position: absolute; top: 35%; width: 70%;}
+.footer > div:nth-child(1){flex-basis: 70%;}
+.footer > div:nth-child(2){flex-basis: 15%;}
+ul > li {opacity: .7;}
+
+@media (max-width : 991px){
+    * {font-size: 13px;}
+    .todayWeather {display: none;}
+    .Travel {text-align: center; padding-left : 0;}
+    #loremName {width: 100% !important; text-align: center; padding: 0 !important;}
+    #lorem {position: relative; top: 1rem; width: 100%; text-align: center; padding: 2rem 0 !important;}
+    #lorem p {color: #000 !important; padding: 2rem 0;}
+    #lorem button {color: #000; border-color: #000;}
+    #footer {display: none!important;}
+    #copyright {display: block !important;}
+}
+
+@media (max-width : 767px){
+    * {font-size: 10px;}
+}

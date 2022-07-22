@@ -3,3 +3,6 @@
     --kakao--yellow : rgb(255, 205, 2);
 }
 .longBtn {padding: .8rem 6rem; background-color: transparent; border: 1px solid #fff; color: #fff;}
+.shortBtn {background-color: transparent; border: 1px solid #fff; color: #fff;}
+img {width: 100%; height: auto;}
+ul, ol, li {padding:0 !important; list-style: none;}
